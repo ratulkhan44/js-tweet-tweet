@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Project - Tweet Tweet</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <nav class="navbar navbar-dark bg-dark d-flex">
+        <h1 class="navbar-brand m-auto">Tweet Tweet</h1>
+      </nav> 
+      <div class="alert alert-info text-center mt-5 msg" role="alert">
+      </div>
+        <div class="row mt-5 p-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <input type="text" placeholder="Type Your Tweet" class="form-control tweet-input">
+                            <button class="btn mt-3 btn-block btn-primary add-tweet-btn">Submit</button>
+                        </form>
+                    </div>     
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <input
+                        type="text"
+                        name="search-tweet"
+                        class="form-control"
+                        id="search-tweet"
+                        placeholder="Search..."
+                        />
+                        <ul class="list-group collection mt-3">
+                            
+                        </ul>  
+                    </div>  
+                </div>
+            </div>
+        </div>
+  
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
