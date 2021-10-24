@@ -189,7 +189,7 @@ searchTweet = (e) =>{
     let searchInputValue=searchTweetElm.value.toLowerCase();
     let count=0;
     document.querySelectorAll('.collection .collection-tweet').forEach((tweet)=>{
-        let foundTweet=tweet.firstElementChild.nextSibling.textContent;
+        let foundTweet=tweet.firstElementChild.nextSibling.textContent.toLowerCase();
         if(foundTweet.indexOf(searchInputValue) === -1){
             tweet.style.display='none';
         }else{
